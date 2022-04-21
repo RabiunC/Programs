@@ -1,12 +1,10 @@
 let arr = [1, 0, 3, 3, 1, 6, 8, 0, 5];
 
-/*function unqElem(p) {
-    
+/*function unqElem(p) {    
     //let items = [];
     let items = {};
 
-    p.forEach(element => {
-        
+    p.forEach(element => {        
         if(!items[element]){
             items[element] = element;
         }
@@ -14,7 +12,6 @@ let arr = [1, 0, 3, 3, 1, 6, 8, 0, 5];
     //return items;
     return Object.values(items);
 }
-
 console.log(unqElem(arr));*/
 
 let len = arr.length;
@@ -26,6 +23,8 @@ for(let i=0; i<len; i++){
         unqElem.push(arr[i]);
     }
 }
-
 console.log(unqElem);
+
+//Using Set
+const unique = [...new Set(arr)];
 
